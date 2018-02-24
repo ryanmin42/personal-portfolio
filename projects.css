@@ -1,0 +1,104 @@
+.technology {
+  padding: 4px 7px;
+  background-color: #222;
+  margin-right: 5px;
+  color:white;
+  border-radius:10px;
+  display: inline-block;
+  margin-bottom: 7px;
+}
+
+.html {
+  background-color: #e34f26;
+}
+
+.python {
+  background-color: #646464;
+}
+
+.css {
+  background-color: #4584b6;
+}
+
+.js {
+  background-color: #f7df1e;
+}
+
+.jquery {
+  background-color: #7acef4;
+}
+
+.angular {
+  background-color: #b52e31;
+}
+
+.node {
+  background-color: #44883e;
+}
+
+.ifttt {
+  background-color: #33ccff;
+}
+
+.php {
+  background-color: #8892be;
+}
+
+.sql {
+  background-color: #f29111;
+}
+
+.aws {
+  background-color: #0f558a;
+}
+
+.heroku {
+  background-color: #c9c3e6;
+}
+
+.ethereum {
+  background-color: #EECB86;
+}
+
+.arduino {
+  background-color: #01969C;
+}
+
+.bootstrap {
+  background-color: #563E7C;
+}
+
+.projectInfo {
+  margin: 15px 0px;
+}
+
+.projectTitle {
+  margin-right: 10px;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.projectTitle:hover {
+  color: #666!important;
+}
+
+.projectDate {
+  display: inline-block;
+  color: #666;
+}
+
+.description {
+  font-size: 16pt;
+  margin: 15px 0px;
+  line-height: 34px;
+}
+
+.award {
+  display: inline;
+}
+
+@media(max-width: 1080px) {
+  .award {
+    line-height: 32px;
+  }
+}

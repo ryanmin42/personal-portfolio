@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Ryan Min</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Author" content="Ryan Min">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script>
+  var expanded = false;
+    function display() {
+      var list = $('.content');
+      var title = $('.title');
+      if(expanded) {
+        list.removeClass('responsive');
+        title.removeClass('extend');
+        expanded = false;
+      }
+      else {
+        list.addClass('responsive');
+        title.addClass('extend');
+        expanded = true;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container header">
+      <div class="titles col-sm-6 col-xs-8">
+        <a href="index.html"><h1 id="name">Ryan Min</h1></a>
+        <h3 id="program">1B UW CS/BBA</h3>
+      </div>
+      <div class="heading col-sm-6 col-xs-4">
+          <nav class="tables">
+            <a href="#!" id="menu-icon" onclick="display()">
+              <img src="img/menu-icon.png"></a>
+            <ul>
+              <li class="content"><a href="contact.html">Contact</a></li>
+              <li class="content"><a href="media.html">Media</a></li>
+              <li class="content"><a href="blog.html">Blog</a></li>
+              <li class="content"><a href="projects.html">Projects</a></li>
+              <li class="content"><a href="resume.pdf">Resume</a></li>
+              <li class="content"><a href="index.html">About</a></li>
+            </ul>
+          </nav>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <h1 class="title">ABOUT</h1>
+    <div id="bio">
+      <img class="col-xs-12 col-sm-4" src="/img/profilepic.jpg"></img>
+      <div id="about" class="col-xs-12 col-sm-8">
+        <p>Hey there! I'm Ryan, an aspiring software developer and student
+          studying Computer Science at the University of Waterloo and Business
+          Administration at Wilfrid Laurier University in the Double Degree
+          program. I'm hoping to major in Algorithms (Waterloo side) and Finance
+          (Laurier side). </p>
+          <p>I'm proficient in Java, C, HTML, JavaScript,
+            Python and SQL, and have worked as a front and back-end developer
+            on a variety of <a class="link" href="projects.html">projects</a> in
+            desktop, web, server-based and mobile settings. I love using my
+            development skills to improve the user experience through
+            implementing user interfaces and effective data engineering.</p>
+            <!-- <p>Currently, I'm a [position name, hopefully Software Engineering Intern]
+            at [company name, hopefully Google] for co-op. I work in the [insert
+            company division] on the [insert project name]...</p> -->
+            <p>Aside from developing and hacking, I love to take photos, jam,
+              game and catch up on the latest Medium article!</p>
+        </div>
+      </div>
+      <div id="footer">
+        &copy Ryan Min 2018
+      </div>
+    </div>
+  </body>
+  </html>

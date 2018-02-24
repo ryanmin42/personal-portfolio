@@ -1,0 +1,35 @@
+#desc {
+  text-align: center;
+  font-family: 'Poppins Medium', sans-serif!important;
+  line-height: 34px;
+}
+
+#links {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+}
+
+.social a {
+  padding: 20px 20px;
+}
+
+.social img {
+  margin: 0 auto !important;
+  text-align:center;
+  width: 75px!important;
+  height: auto;
+}
+
+#footer {
+  text-align: center!important;
+}
+
+@media(max-width: 1080px) {
+  #links {
+    width: 80%!important;
+    overflow: auto;
+    display: block!important;
+  }
+}

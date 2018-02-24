@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Ryan Min - Projects</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Author" content="Ryan Min">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script>
+  var expanded = false;
+    function display() {
+      var list = $('.content');
+      var title = $('.title');
+      if(expanded) {
+        list.removeClass('responsive');
+        title.removeClass('extend');
+        expanded = false;
+      }
+      else {
+        list.addClass('responsive');
+        title.addClass('extend');
+        expanded = true;
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container header">
+      <div class="titles col-sm-6 col-xs-8">
+        <a href="index.html"><h1 id="name">Ryan Min</h1></a>
+        <h3 id="program">1B UW CS/BBA</h3>
+      </div>
+      <div class="heading col-sm-6 col-xs-4">
+          <nav class="tables">
+            <a href="#!" id="menu-icon" onclick="display()">
+              <img src="img/menu-icon.png"></a>
+            <ul>
+              <li class="content"><a href="contact.html">Contact</a></li>
+              <li class="content"><a href="media.html">Media</a></li>
+              <li class="content"><a href="blog.html">Blog</a></li>
+              <li class="content"><a href="projects.html">Projects</a></li>
+              <li class="content"><a href="resume.pdf" download>Resume</a></li>
+              <li class="content"><a href="index.html">About</a></li>
+            </ul>
+          </nav>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <h1 class="title">PROJECTS</h1>
+    <div id="gallery">
+      <div class="project">
+        <div class="projectInfo">
+          <a href="https://github.com/a5chanda/Goosecoin" target="_blank">
+            <h2 class="projectTitle">Goosecoin</h2>
+          </a>
+          <h4 class="projectDate">December 2017 - ongoing</h4>
+        </div>
+        <p><div class="technology ethereum">Ethereum</div>
+          <div class="technology php">PHP</div>
+          <div class="technology sql">SQL</div>
+          <div class="technology js">JavaScript</div>
+          <div class="technology html">HTML</div>
+          <div class="technology css">CSS</div>
+        </p>
+        <p class="description">Goosecoin is a financial management platform
+          founded upon the belief that post-secondary students should have
+          decentralized, transparent access to their funds at all times. This is
+          achieved through an Ethereum cryptocurrency that is fully hosted on a
+          private network to allow immediate student access to funds on all
+          devices, and improved communication with both their school and
+          students at other post-secondary institutions in Canada.</p>
+      </div>
+      <div class="project">
+        <div class="projectInfo">
+          <a href="https://github.com/ryanmin42/visualeyes" target="_blank">
+            <h2 class="projectTitle">VisualEyes</h2>
+          </a>
+          <h4 class="projectDate">UOttaHack 2018</h4>
+        </div>
+        <p><div class="technology python">Python</div>
+          <div class="technology flask">Flask</div>
+          <div class="technology js">JavaScript</div>
+          <div class="technology jquery">JQuery</div>
+          <div class="technology html">HTML</div>
+          <div class="technology css">CSS</div>
+          <div class="technology node">NodeJS</div>
+          <div class="technology ifttt">IFTTT</div>
+          <div class="technology arduino">Arduino</div>
+        </p>
+        <!-- <img class="projectImg" src="img/visualeyes.jpg"/> -->
+        <p class="description">VisualEyes is a smart home doorbell system
+          designed to provide security & convenience for the blind & disabled
+          within their own homes. Every time the doorbell rings, a webcam
+          takes a picture of the person at the door and uses a facial
+          recogntiion API, Kairos, to match them to one of two databases:
+          trusted friends & family, or suspicious people. If the person is not
+          found in either, they are marked as unknown. The matched database
+          and name of the person at the door are communicated to the user
+          through a voice interface system.</p>
+        <h4 class="award">4th Place Finalist & Best Use
+          of IoT Award, <p class="award">UOttaHack 2018</p></h4>
+      </div>
+      <div class="project">
+        <div class="projectInfo">
+          <a href="https://github.com/yingninggui/Intervue" target="_blank">
+            <h2 class="projectTitle">Intervue</h2>
+          </a>
+          <h4 class="projectDate">HackPrinceton 2017</h4>
+        </div>
+        <p><div class="technology js">JavaScript</div>
+          <div class="technology html">HTML</div>
+          <div class="technology css">CSS</div>
+          <div class="technology node">NodeJS</div>
+          <div class="technology heroku">Heroku</div>
+          <div class="technology aws">AWS</div>
+        </p>
+        <!-- <img class="projectImg" src="img/intervue.jpg"/> -->
+        <p class="description">Intervue is a voice-enabled interviewing
+          practice platform that offers sample questions and helpful feedback
+          utilizing the Amazon Echo. Once a user response is recorded, it is
+          sent over to the server and analyzed with IBM's Watson Tone Analyzer
+          API, which returns 15 metrics based on speech patterns such as fear,
+          confidence and excitement, and uses the metrics to deliver both
+          positive and constructive feedback.</p>
+      </div>
+      <div class="project">
+        <div class="projectInfo">
+          <a href="https://github.com/yhuang133/pizzaParty" target="_blank">
+            <h2 class="projectTitle">Pizza Party</h2>
+          </a>
+          <h4 class="projectDate">Hack the North 2017</h4>
+        </div>
+        <p><div class="technology node">NodeJS</div>
+          <div class="technology html">HTML</div>
+          <div class="technology css">CSS</div>
+          <div class="technology js">JavaScript</div>
+          <div class="technology angular">AngularJS</div>
+          <div class="technology python">Python</div>
+          <div class="technology flask">Flask</div>
+          <div class="technology arduino">Arduino</div>
+        </p>
+        <!-- <img class="projectImg" src="img/pizzaparty.jpg"/> -->
+        <p class="description">Pizza Party is an automated pizza deliery system
+          that orders the perfect pizza suited to your cravings based on price,
+          location and favourite toppings. The user's location is automatically
+          detected using the Google Maps API, and they can enter their party
+          size & 4 favourite toppings. Pizza data is then scraped from 6
+          different pizzeria sites, and the closest, cheapest location with the
+          appropriate toppings is chosen for the user to order.</p>
+        <h4>2nd Place, <p class="award">Deloitte Digital
+          Pitch Competition</p></h4>
+      </div>
+      <div class="project">
+        <div class="projectInfo">
+          <a href="https://github.com/ryanmin42/shopaholic.io" target="_blank">
+            <h2 class="projectTitle">Shopaholic</h2>
+          </a>
+          <h4 class="projectDate">July 2017 - ongoing</h4>
+        </div>
+        <p><div class="technology html">HTML</div>
+          <div class="technology css">CSS</div>
+          <div class="technology js">JavaScript</div>
+          <div class="technology python">Python</div>
+          <div class="technology jquery">JQuery</div>
+        </p>
+        <!-- <img class="projectImg" src="img/shopaholic.jpg"/> -->
+        <p class="description">Shopaholic is a Chrome extension that allows
+          users to compare their online shopping options at the click a button.
+          The user can highlight a word or phrase within a webpage, and the
+          extension searches and scrapes data from different online retailers
+          such as Amazon, eBay, and AliExpress to display product information
+          that matches the highlighted word/phrase, such as product images,
+          shipping location, price and features. The user can then choose to
+          sort the results by price, relevance, or date posted.</p>
+      </div>
+      <div class="project">
+        <div class="projectInfo">
+          <a href="https://github.com/ryanmin42/shopaholic.io" target="_blank">
+            <h2 class="projectTitle">Intrst Financial</h2>
+          </a>
+          <h4 class="projectDate">November 2016 - August 2017</h4>
+        </div>
+        <p><div class="technology html">HTML</div>
+          <div class="technology css">CSS</div>
+          <div class="technology js">JavaScript</div>
+          <div class="technology angular">AngularJS</div>
+          <div class="technology jquery">JQuery</div>
+          <div class="technology php">PHP</div>
+          <div class="technology bootstrap">Bootstrap</div>
+        </p>
+        <!-- <img class="projectImg" src="img/intrst.jpg"/> -->
+        <p class="description">Intrst Financial is a youth-run online financial
+          services business that sought to financially educate the Generation Z
+          cohort and offer assistance in making financial decisions. This was
+          offered to users through sponsored product comparison charts comparing
+          saving & chequing accounts, credit cards, and phone plans that were
+          specifically catered towards ages 13-21. Other content that was
+          offered included articles based on the latest financial lifestyle
+          trends, a glossary of financial term definitions, and interactive
+          budget & interest rate calculators.</p>
+        <h4>Best Website, <p class="award">JA Central Ontario
+          VentureON 2017</p></h4>
+      </div>
+    </div>
+    <div id="footer">
+      &copy Ryan Min 2018
+    </div>
+  </div>
+</body>
+</html>

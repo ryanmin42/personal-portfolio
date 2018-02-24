@@ -1,0 +1,13 @@
+#about {
+  font-size: 17pt;
+  line-height: 34px;
+}
+
+#bio {
+  overflow: hidden;
+  margin: 60px 0px;
+}
+
+.link {
+  color: limegreen!important;
+}
