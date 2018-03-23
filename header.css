@@ -64,6 +64,10 @@ li a:hover {
 	height: 40px;
 }
 
+.title {
+      transition: margin-top 300ms;
+}
+
 @media (max-width: 1200px) and (min-width: 1080px) {
   #program {
     transform: translate(-30%,-50%)!important;
@@ -120,6 +124,8 @@ li a:hover {
   }
 
   .extend {
+    z-index: 1;
+    position: relative;
     margin-top: 350px!important;
   }
 }
