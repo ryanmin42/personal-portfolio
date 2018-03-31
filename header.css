@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'Poppins Medium';
-  src: url("fonts/poppins/poppins-medium.ttf");
-}
-
 #name, #program, li {
   display: inline;
 }
@@ -30,7 +25,8 @@ li {
 }
 
 li a {
-  font-family: 'Poppins Medium', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 
