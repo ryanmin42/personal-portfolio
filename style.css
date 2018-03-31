@@ -39,17 +39,17 @@
 
 @font-face {
   font-family: 'Rubik';
-  src: url("fonts/rubik/rubik-regular.ttf");
+  src: url("../fonts/rubik/rubik-regular.ttf");
 }
 
 @font-face {
   font-family: 'Poppins Bold';
-  src: url("fonts/poppins/poppins-bold.ttf");
+  src: url("../fonts/poppins/poppins-bold.ttf");
 }
 
 @font-face {
   font-family: 'Poppins Medium';
-  src: url("fonts/poppins/poppins-medium.ttf");
+  src: url("../fonts/poppins/poppins-medium.ttf");
 }
 
 h1, h2, h3, h4, h5, h6 {
