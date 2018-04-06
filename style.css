@@ -1,5 +1,8 @@
 @import url("http://fonts.googleapis.com/css?family=Rubik");
 @import url("http://fonts.googleapis.com/css?family=Poppins");
+@import url("http://fonts.googleapis.com/css?family=Poppins:bold");
+
+@font-face { font-family: PoppinsBold; src: url("http://fonts.googleapis.com/css?family=Poppins:bold"); }
 
 * {
   font-family: 'Rubik', sans-serif;
@@ -43,7 +46,7 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif!important;
-  font-weight: 700;
+  font-weight: 900!important;
 }
 
 ul {
