@@ -6,6 +6,10 @@
   position: relative;
 }
 
+header {
+  z-index: 1;
+}
+
 .designs img {
   width: 100%;
 }
@@ -37,6 +41,12 @@ left: 0;
 right: 0;
 }
 
+.lower-title {
+  text-align: center;
+  font-size: 48pt;
+  margin-top: 100px;
+}
+
 .designs:hover h2 {
   opacity: 1!important;
 }
@@ -48,6 +58,10 @@ right: 0;
 @media(max-width: 1080px) {
   .overlay {
     opacity: 0.6!important;
+  }
+
+  .lower-title {
+    font-size: 32pt!important;
   }
 
   .designs {
