@@ -8,36 +8,20 @@
   <meta name="Keywords" content="">
   <meta name="Description" content="">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="about.css">
-  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="js/nav.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-  <script>
-  var expanded = false;
-    function display() {
-      var list = $('.content');
-      var title = $('.title');
-      if(expanded) {
-        list.removeClass('responsive');
-        title.removeClass('extend');
-        expanded = false;
-      }
-      else {
-        list.addClass('responsive');
-        title.addClass('extend');
-        expanded = true;
-      }
-    }
-  </script>
 </head>
 <body>
   <header>
     <div class="container header">
       <div class="titles col-sm-6 col-xs-8">
-        <a href="index.html"><h1 id="name">Ryan Min</h1></a>
+        <a href="index"><h1 id="name">Ryan Min</h1></a>
         <h3 id="program">1B UW CS/BBA</h3>
       </div>
       <div class="heading col-sm-6 col-xs-4">
@@ -45,12 +29,12 @@
             <a href="#!" id="menu-icon" onclick="display()">
               <img src="img/menu-icon.png"></a>
             <ul>
-              <li class="content"><a href="contact.html">Contact</a></li>
-              <li class="content"><a href="media.html">Media</a></li>
-              <li class="content"><a href="blog.html">Blog</a></li>
-              <li class="content"><a href="projects.html">Projects</a></li>
-              <li class="content"><a href="resume.pdf">Resume</a></li>
-              <li class="content"><a href="index.html">About</a></li>
+              <li class="content"><a href="contact">Contact</a></li>
+              <li class="content"><a href="media">Media</a></li>
+              <li class="content"><a href="blog">Blog</a></li>
+              <li class="content"><a href="projects">Projects</a></li>
+              <li class="content"><a target="_blank" href="resume.pdf">Resume</a></li>
+              <li class="content"><a href="index">About</a></li>
             </ul>
           </nav>
         </a>
@@ -60,14 +44,14 @@
   <div class="container">
     <h1 class="title">ABOUT</h1>
     <div id="bio">
-      <img class="col-xs-12 col-sm-4" src="img/profilepic.JPG"></img>
+      <img id="headshot" class="image col-xs-12 col-sm-4" src="img/profilepic.JPG"></img>
       <div id="about" class="col-xs-12 col-sm-8">
         <p>I'm Ryan, an aspiring software developer and student
           studying Computer Science at the University of Waterloo and Business
           Administration at Wilfrid Laurier University in the Double Degree
           program. </p>
           <p>I've worked as a front and back-end developer
-            on a variety of <a class="link" href="projects.html">projects</a> in
+            on a variety of <a class="link" href="projects">projects</a> in
             desktop, web, server-based and mobile settings. I love to use my
             programming abilities to design user interfaces and find new ways
             to improve data security.</p>

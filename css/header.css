@@ -18,6 +18,7 @@ header .container {
 
 #program {
   color: #555;
+  font-weight: 900!important;
   top: 50%;
   left: 50%;
   transform: translate(-60%,-50%);
