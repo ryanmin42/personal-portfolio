@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Ryan Min - Blog</title>
+  <title>Ryan Min</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="Author" content="Ryan Min">
@@ -9,7 +9,7 @@
   <meta name="Description" content="">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/blog.css">
+  <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="js/nav.js"></script>
@@ -42,22 +42,26 @@
     </div>
   </header>
   <div class="container">
-    <h1 class="title">BLOG</h1>
-    <h3>Here, I'll be sharing some of my thoughts on the Waterloo experience,
-      <br>the CS industry, finance, co-op, photography, music, or anything else.
-    </h3>
-    <h2>Coming Soon!</h2>
-    <!--
-      <div class="article">
-        <a href="competitive-waterloo"><h2>Landing a Co-op Job</h2></a>
-        <h4>March 5, 2018</h4>
-        <p class="summary">Scared by the 500+ applicants for your dream co-op
-          job? Here's how to stand out.</p>
-        <img src="img/app-numbers.jpg"/>
-        <p><a href="competitive-waterloo"><i>Continue reading -></i></a></p>
+    <h1 class="title">ABOUT</h1>
+    <div id="bio">
+      <img id="headshot" class="image col-xs-12 col-sm-4" src="img/profilepic.JPG"></img>
+      <div id="about" class="col-xs-12 col-sm-8">
+        <p>I'm Ryan, an aspiring software developer and student
+          studying Computer Science at the University of Waterloo and Business
+          Administration at Wilfrid Laurier University in the Double Degree
+          program. </p>
+          <p>I've worked as a front and back-end developer
+            on a variety of <a class="link" href="projects">projects</a> in
+            desktop, web, server-based and mobile settings. I love to use my
+            programming abilities to design user interfaces and find new ways
+            to improve data security.</p>
+         <p>Aside from developing and hacking, I love to take photos, jam,
+            game and catch up on the latest Medium article!</p>
+        </div>
       </div>
-      <h3>More posts coming soon!</h3>
-    -->
-  </div>
-</body>
-</html>
+      <div id="footer">
+        &copy Ryan Min 2018
+      </div>
+    </div>
+  </body>
+  </html>

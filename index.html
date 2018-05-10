@@ -13,9 +13,20 @@
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="js/nav.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $(function(){
+      var loading = $('.intro-item').toArray();
+      var length = loading.length;
+      for(var i = 0; i < length; i++) {
+        setTimeout((load, j) => {$(load[j]).addClass('fadeIn')}, 1000 * i, loading, i);
+      }
+    });
+  });
+  </script>
 </head>
 <body>
   <header>
@@ -46,21 +57,22 @@
     <div id="bio">
       <img id="headshot" class="image col-xs-12 col-sm-4" src="img/profilepic.JPG"></img>
       <div id="about" class="col-xs-12 col-sm-8">
-        <p>I'm Ryan, an aspiring software developer and student
-          studying Computer Science at the University of Waterloo and Business
-          Administration at Wilfrid Laurier University in the Double Degree
-          program. </p>
-          <p>I've worked as a front and back-end developer
-            on a variety of <a class="link" href="projects">projects</a> in
-            desktop, web, server-based and mobile settings. I love to use my
-            programming abilities to design user interfaces and find new ways
-            to improve data security.</p>
-         <p>Aside from developing and hacking, I love to take photos, jam,
-            game and catch up on the latest Medium article!</p>
-        </div>
+        <p id="desc"><strong>Hi, my name's Ryan Min.</strong></p>
+        <ul class="intro">
+          <li id="item1" class="intro-item"><p>►  An enthusiastic <strong>software developer</strong>, <strong>designer</strong>, and <strong>product manager.</strong></p></li>
+          <li id="item2" class="intro-item"><p>►  A <strong>Computer Science</strong> student at the <strong>University of Waterloo.</strong></p></li>
+          <li id="item3" class="intro-item"><p>►  A <strong>Business Administration</strong> student at <strong>Wilfrid Laurier University.</strong></p></li>
+          <li id="item4" class="intro-item"><p>►  A <strong>Software Engineer</strong> at <strong>Capital One.</strong></p></li>
+          <li id="item5" class="intro-item"><p><strong>Want to learn more about me?</strong></p></li>
+          <li>
+            <div>
+              <li id="item6" class="intro-item"><div class="col-sm-4 col-xs-12"><p>Check out my <a href="projects"><strong>projects.</strong></a></div></li>
+              <li id="item7" class="intro-item"><div class="col-sm-4 col-xs-12"><p>Take a look at my <a target="_blank" href="resume.pdf"><strong>resume.</strong></a></div></li>
+              <li id="item8" class="intro-item"><div class="col-sm-4 col-xs-12"><p>See some of my <a href="media"><strong>website designs.</strong></a></div></li>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div id="footer">
-        &copy Ryan Min 2018
       </div>
     </div>
   </body>

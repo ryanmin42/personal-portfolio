@@ -6,12 +6,11 @@
 
 * {
   font-family: 'Rubik', sans-serif;
-	-webkit-animation: fadein 1.25s; /* Safari, Chrome and Opera > 12.1 */
-	       -moz-animation: fadein 1.25s; /* Firefox < 16 */
-	        -ms-animation: fadein 1.25s; /* Internet Explorer */
-	         -o-animation: fadein 1.25s; /* Opera < 12.1 */
-	            animation: fadein 1.25s;
-            	}
+	/*-webkit-animation: fadein 1.25s;
+	       -moz-animation: fadein 1.25s;
+	        -ms-animation: fadein 1.25s;
+	         -o-animation: fadein 1.25s; 
+	            animation: fadein 1.25s;          */
 	}
 
 	@keyframes fadein {
@@ -51,6 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 
 ul {
   list-style: none;
+  margin-left: 10px;
 }
 
 a {

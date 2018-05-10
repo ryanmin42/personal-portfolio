@@ -12,6 +12,11 @@
   margin: 0;
 }
 
+#item5 p {
+  text-align:center;
+  margin-top: 40px;
+}
+
 header .container {
   background-color: white!important;
 }
